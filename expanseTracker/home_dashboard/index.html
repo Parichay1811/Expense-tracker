@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/9073/9073032.png">
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="../index.html"><button class="btn nav-btn" >Dashboard</button></a>
+            </div>
+            <div class="search-container">
+                <input type="text" id="search-bar" placeholder="Search tools..." />
+            </div>
+            <div class="buttons">
+                <button id="color-toggle-btn" class="btn nav-btn">Choose Theme</button>
+                <a href="../index.html"><button class="btn nav-btn">Logout</button></a>
+            </div>
+            <div class="menu">
+                <button id="hamburger" class="btn nav-btn">☰</button>
+                <div id="mobile-menu" class="mobile-dropdown">
+                    <button class="dropdown-item" onclick="location.href='../index.html';">Dashboard</button>
+                    <button id="mobile-color-toggle" class="dropdown-item">Choose Theme</button>
+                    <button class="dropdown-item" onclick="location.href='../index.html';">Logout</button>
+                </div>
+            </div>
+            <div id="color-dropdown" class="dropdown">
+                <button class="dropdown-item" data-theme="theme-light">Light</button>
+                <button class="dropdown-item" data-theme="theme-red">Red</button>
+                <button class="dropdown-item" data-theme="theme-yellow">Yellow</button>
+                <button class="dropdown-item" data-theme="theme-green">Green</button>
+                <button class="dropdown-item" data-theme="theme-blue">Blue</button>
+                <button class="dropdown-item" data-theme="theme-purple">Purple</button>
+                <button class="dropdown-item" data-theme="theme-indigo">Indigo</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="welcome-message" id="welcome-message"></div>
+        <section id="recent-activity" class="recent-activity">
+            <h2>Recent Activity</h2>
+            <ul id="activity-list"></ul>
+        </section>
+
+        <section class="tools">
+            <a href="../Home/expense_tracker/index.html">
+                <button class="btn card-btn" title="Track your daily expenses">Expense Tracker</button>
+            </a>
+            <a href="../Home/Gemini/index.html">
+                <button class="btn card-btn" title="Get personalized financial advice">AI Financial Advisor</button>
+            </a>
+            <a href="../Home/Gemini/index.html">
+                <button class="btn card-btn" title="Chat with an AI finance expert">Chat with Finance Expert</button>
+            </a>
+            <a href="../Home/MY_Expenses_Notes/index.html">
+                <button class="btn card-btn" title="Keep notes about your expenses">My Expense Notes</button>
+            </a>
+        </section>
+        <button id="back-to-top" class="btn back-to-top">Back to Top</button>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>

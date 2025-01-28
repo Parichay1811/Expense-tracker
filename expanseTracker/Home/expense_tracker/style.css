@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Chewy&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Exo:ital,wght@0,100..900;1,100..900&family=Great+Vibes&family=Jura:wght@300..700&family=Libre+Caslon+Text:wght@400;700&family=Pinyon+Script&family=Playwrite+VN:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&family=Teko:wght@300..700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Exo", serif;
+  }
+  body {
+    width: 100%;
+    background: linear-gradient(to right, #283c86, #45a247);
+  }
+  body::-webkit-scrollbar{
+    display: none;
+  }
+  main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* gap: 40px; */
+    /* margin: 0 30px; */
+    /* background-color: #000000; */
+    /* justify-content: center; */
+  }
+  header {
+    width: 100%;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(74, 74, 74, 0.6);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.83);
+  }
+  .par{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  header h2 {
+    font-size: 30px;
+    background-image: linear-gradient(45deg, #E88C4A 48%, #E07A37 60%, #D86825 50%, #CC5613 25%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  header a {
+    text-decoration: none;
+    background-image: linear-gradient(45deg, #559bf6 48%, #1aa11a 80%, #6a1c66 50%, #33b048 50%); 
+    background-clip: text; 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    font-size: larger;
+    font-weight: 500;
+  }
+  header a:hover {
+    color: #c3c0c0;
+  }
+  
+  input::placeholder {
+    color: rgb(6, 4, 4);
+    font-style: unset;
+    font-size: 14px;
+    width: fit-content;
+  }
+  h1 {
+    text-align: center;
+    font-size: 90px;
+    background-image: linear-gradient(45deg, #62e84a 48%, #379ae0 60%, #278eee 50%, #278eee 25%); 
+    background-clip: text; 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+  }
+  .two{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    /* margin-left: 40px; */
+    width: 100%;
+  }
+  #hh {
+    text-align: center;
+    /* margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px; */
+    background: rgba(255, 255, 255, 0.45);
+    box-shadow: 0px 0px 54px 0px rgba(0,0,0,0.75);
+    backdrop-filter: blur(4.5px);
+    -webkit-backdrop-filter: blur(4.5px);
+    border-radius: 10px;
+    padding: 20px;
+    width: 96%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 100px;
+  }
+  input {
+    outline: none;
+    width: fit-content;
+    height: 30px;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+  }
+  .country{
+    width: fit-content;
+    height: auto;
+    padding: 2px;
+    border-radius: 5px;
+  }
+  form #bbs {
+    margin: 10px;
+    padding: 10px 100px;
+    text-align: center;
+    font-size: x-large;
+    /* text-transform: uppercase; */
+    transition: 0.5s;
+    background-size: 100% auto;
+    color: rgb(255, 255, 255);
+    /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2); */
+    box-shadow: 0 0 20px #000000;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, #2d9f30 0%, #5a8ef6 51%, #0077ff 100%);
+  }
+  #bbs:hover {
+    background-position: right center;
+  }
+  select {
+    width: 150px;
+    height: 53px;
+    font-size: 20px;
+    color: rgb(10, 16, 8);
+    background-color: rgb(251, 254, 251);
+  }
+  
+  .container {
+    /* width: 60%; */
+    max-height: 430px;
+    padding: 30px 20px;
+    margin: 40px 40px 0;
+    display: none;
+    overflow: scroll;
+    width: 90%;
+  }
+  .container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .fname, .score, .lname, .country {
+    border: none;
+  }
+  .total-amount {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background: rgb(43, 132, 126);
+    padding: 10px 20px;
+    border-radius: 8px;
+  }
+  
+  #cc {
+    margin-top: 50px;
+    width: 95%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 54px 0px rgba(0,0,0,0.75);
+    backdrop-filter: blur(16.5px);
+    border-radius: 10px;
+    padding: 20px;
+  }
+  #ccs {
+    width: 35%;
+    height: 35%;
+    margin-left: 30%;
+  }
+  
+  #tt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    height: 100%;
+    background-image: url(../../assets/wallpaperflare-cropped.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 0px 54px 0px rgba(0,0,0,0.75);
+    border-radius: 10px;
+    padding: 30px 0;
+  }
+  #ttd {
+    width: 50%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 54px 0px rgba(0,0,0,0.75);
+    backdrop-filter: blur(7px);
+    border-radius: 10px;
+    color: rgb(224, 224, 224);
+  }
+  #taxForm button {
+    background-image: linear-gradient(to right, #2d9f30 0%, #5a8ef6 51%, #0077ff 100%);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  #taxForm button:hover {
+    background-color: darkred;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  th, td {
+    border: 1px solid #ccc;
+    text-align: left;
+    padding: 10px;
+  }
+  th {
+    background: rgba(0, 0, 0, 0.1);
+  }
+  tbody tr:nth-child(odd) {
+    background: rgba(0, 145, 255, 0.7);
+  }
+  tbody tr:nth-child(even) {
+    background: #2d9f30;
+  }
+  
+  #result p {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 30px;
+  }
+  .player-item{
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    background: rgba(255, 255, 255, 0.45);
+    backdrop-filter: blur(4.5px);
+    -webkit-backdrop-filter: blur(4.5px);
+    height: 50px;
+    padding: 13px 20px;
+    border: 1px solid black;
+    margin-left: 50px;
+  }
+  
+
+  .hamburger-menu {
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+    color: #fff;
+  }
+  
+  nav.menu {
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav.menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+  }
+  
+  nav.menu a:hover {
+    color: #c3c0c0;
+  }
+
+  @media (max-width: 950px) {
+    .hamburger-menu {
+      display: block;
+    }
+  
+    nav.menu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 70px;
+      right: 20px;
+      background: rgba(0, 0, 0, 0.8);
+      padding: 10px;
+      border-radius: 8px;
+    }
+  
+    nav.menu.active {
+      display: flex;
+    }
+  }
+  @media screen and (max-width: 300px) {
+    body{
+      background-color: red;
+    }
+    main{
+      width: 100%;
+    }
+  }

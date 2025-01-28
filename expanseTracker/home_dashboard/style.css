@@ -1,0 +1,324 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #24bd17, #3a82ff);
+    color: #2a2a2a;
+    transition: background-color 0.5s, color 0.5s;
+    /* height: 100vh; */
+    width: 100%;
+}
+
+/* Header Styles */
+header {
+    width: 100%;
+    padding: 10px 20px;
+    background: linear-gradient(to right, #000000, #e74c3c);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    
+}
+
+.btn {
+    padding: 10px 15px;
+    font-size: 16px;
+    color: white;
+    background: linear-gradient(to right, #24bd17, #3a82ff);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+#welcome-message{
+    font-size: 5rem;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+/* Dropdown Styles */
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item {
+    padding: 10px 15px;
+    font-size: 14px;
+    background: none;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    width: 100%;
+}
+
+.dropdown-item:hover {
+    background-color: #f1f1f1;
+}
+
+/* Main Content Styles */
+main {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.card-btn {
+    height: 150px;
+    font-size: 18px;
+    background: linear-gradient(to right, #000000, #e74c3c);
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tools a{
+    text-decoration: none;
+}
+.card-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Theme Styles */
+.theme-light {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+.theme-red {
+    background-color: #ffe6e6;
+    color: #660000;
+}
+
+.theme-yellow {
+    background-color: #fff9c4;
+    color: #5d4037;
+}
+
+.theme-green {
+    background-color: #d0f8ce;
+    color: #33691e;
+}
+
+.theme-blue {
+    background-color: #bbdefb;
+    color: #1e88e5;
+}
+
+.theme-purple {
+    background-color: #e1bee7;
+    color: #6a1b9a;
+}
+
+.theme-indigo {
+    background-color: #c5cae9;
+    color: #283593;
+}
+
+/* Search Bar */
+.search-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+#search-bar {
+    padding: 8px 15px;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    outline: none;
+    font-size: 16px;
+}
+
+#search-bar:focus {
+    border-color: #4caf50;
+}
+
+/* Welcome Message */
+.welcome-message {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Recent Activity */
+.recent-activity {
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 20px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.recent-activity h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+#activity-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#activity-list li {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+/* Back-to-Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    display: none; /* Initial hidden state */
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.back-to-top.show {
+    display: block; /* Show when scrolled down */
+}
+.back-to-top:hover {
+    background-color: #45a049;
+    transform: translateY(-5px);
+}
+
+#hamburger {
+    display: none;
+}
+
+.menu {
+    position: relative;
+}
+
+.mobile-dropdown {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mobile-dropdown .dropdown-item {
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: left;
+}
+
+.mobile-dropdown .dropdown-item:hover {
+    background-color: #f1f1f1;
+}
+
+.mobile-dropdown.show {
+    display: block;
+}
+@media screen and (max-width: 1274px) {
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #recent-activity{
+        width: 80%;
+    }
+    .card-btn{
+        background: linear-gradient(to right, #000000, #e74c3c);
+    }
+
+}
+@media screen and (max-width: 840px) {
+    
+    #recent-activity{
+        width: 80%;
+    }
+    .card-btn{
+        background: linear-gradient(to right, #000000, #e74c3c);
+        width: max-content;
+    }
+    .tools{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+
+    }
+    #back-to-top{
+        /* width: 20px; */
+        border-radius: 5px;
+        /* margin-top: 200px; */
+    }
+    
+}
+
+@media screen and (max-width: 727px) {
+    .buttons {
+        display: none;
+    }
+
+    #hamburger {
+        display: block;
+    }
+}
+
+@media  screen and (max-width: 600px) {
+    #search-bar{
+        width: min-content;
+    }
+    .btn, .nav-btn{
+        display: none;
+    }
+    body{
+        /* width: 100vw; */
+        background-size: cover;
+        /* background-repeat: no-repeat; */
+    }
+    .card-btn{
+        display: block;
+    }
+}
+@media screen and (max-width: 500px) {
+    .tools{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #welcome-message{
+        font-size: 50px;
+    }
+}
