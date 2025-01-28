@@ -134,7 +134,7 @@ taxForm.addEventListener("submit", function (e) {
 });
 
 function toggleMenu() {
-  const menu = document.querySelector('nav.menu');
+  const menu = document.querySelector('.menu');
   menu.classList.toggle('active');
 }
 
