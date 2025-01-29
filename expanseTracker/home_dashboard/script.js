@@ -49,7 +49,7 @@ window.addEventListener("scroll", () => {
 backToTop.addEventListener("click", () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
 });
-
+/* 
 // Recent Activity (Mock Data)
 // Recent Activity (Mock Data)
 const activityList = document.getElementById("activity-list");
@@ -72,7 +72,7 @@ if (activityList) {
     console.log("Activities added:", activities);
 } else {
     console.error("Activity list element not found.");
-}
+} */
 // Toggle Mobile Menu
 
 const hamburger = document.getElementById("hamburger");

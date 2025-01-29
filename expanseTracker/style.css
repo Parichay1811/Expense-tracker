@@ -1,21 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Chewy&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Exo:ital,wght@0,100..900;1,100..900&family=Great+Vibes&family=Jura:wght@300..700&family=Libre+Caslon+Text:wght@400;700&family=Pinyon+Script&family=Playwrite+VN:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&family=Teko:wght@300..700&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+    font-family: "Exo", serif;
 }
 
 body {
     line-height: 1.6;
     color: #a5a5a5;
-    background-color: #000000;
+    background-color: #111111;
 }
 body::-webkit-scrollbar{
     display: none;
   }
 
 .hero-section {
-    background: url('./assets/wallpaperflare.com_wallpaper\ \(6\).jpg') no-repeat center center/cover;
+    background: url('./assets/wallpaperflare.com_wallpaper\ \(9\).jpg') no-repeat center center/cover;
     height: 100vh;
     color: #b1b1b1;
     display: flex;
@@ -25,8 +26,9 @@ body::-webkit-scrollbar{
     text-align: center;
 }
 
+
 .navbar {
-    width: 85%;
+    width: 90%;
     margin: 0 auto; /* Center the navbar horizontally */
     padding: 0.5rem 20px; /* Reduce vertical padding */
     display: flex;
@@ -42,7 +44,10 @@ body::-webkit-scrollbar{
 
 .navbar h1 {
     font-size: 2rem;
-    color: #909090;
+    background-image: linear-gradient(45deg, #174BFF 48%, #00D700 80%, #06A463 50%, #00D700 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .navbar .jj {
@@ -79,43 +84,54 @@ body::-webkit-scrollbar{
 }
 
 .hamburger .bar {
-    width: 30px;
+    width: 25px;
     height: 3px;
     background-color: #fff;
     border-radius: 5px;
+    /* font-size: small; */
 }
 
 .hero-content {
-    max-width: 700px;
+    max-width: 80%;
+    background-color: #00000057;
+    padding: 30px;
 }
+
 
 .hero-content h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
-    color: rgb(141, 145, 140);
+    background: linear-gradient(45deg, #ff0303 40%, #ff0000 55%, #3f65ed 50%, #ffffff 25%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 100%;
 }
 
 .hero-content p {
     font-size: 1.2rem;
     margin-bottom: 2rem;
-    color: rgb(31, 146, 2);
+    color: rgb(255, 255, 255);
+    font-size: xx-large;
+    
 }
 
 .btn-group .btn {
     display: inline-block;
     padding: 10px 20px;
     margin: 0 10px;
-    border: 2px solid #6adc00;
+    border: 2px solid #ff1101;
+    font-size: large;
     border-radius: 25px;
     text-decoration: none;
-    color: #6adc00;
+    color: #ffffff;
     font-weight: bold;
     transition: background 0.3s, color 0.3s;
 }
 
 .btn-group .btn:hover {
-    background: #6adc00;
-    color: #333;
+    background: #ff06066b;
+    color: #d4d4d4;
 }
 
 .section {
@@ -126,7 +142,7 @@ body::-webkit-scrollbar{
 .section h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
-    color: #3f661a;
+    color: #107600;
 }
 
 .section p {
@@ -143,6 +159,38 @@ body::-webkit-scrollbar{
 
 .section ul li {
     margin: 0.5rem 0;
+}
+
+.footer {
+    background-color: #1a1a1a;
+    color: #5e5e5e;
+    text-align: center;
+    padding: 1rem 0;
+   
+}
+
+.footer-content {
+    max-width: 100%;
+    margin: 0 auto;
+    
+}
+
+.social-media {
+    margin-top: 0.5rem;
+}
+
+.social-media a {
+    text-decoration: none;
+    font-size: 25px;
+    margin-right: 15px;
+    color: #5e5e5e;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-media a:hover {
+    color: #fff;
+    transform: translateY(-5px);
 }
 
 /* Media Query for Mobile */
@@ -164,12 +212,41 @@ body::-webkit-scrollbar{
         gap: 5px;
 
     }
+    
+    .hero-content h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        /* background: linear-gradient(45deg, #3a8cf7 48%, #1aa11a 80%, #c27ebf 50%, #33b048 50%); */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .hero-content p {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+        /* color: rgba(255, 8, 8, 0.724); */
+        font-size: large;
+        font-weight: 400;
+        margin: 2rem 1rem;
+    }
+    .btn-group .btn {
+        margin: 0.5rem;
+        display: inline-block;
+        padding: 10px 20px;
+        /* margin: 0 10px; */
+        /* border: 2px solid rgba(255, 8, 8, 0.724); */
+        font-size: large;
+        border-radius: 25px;
+        text-decoration: none;
+        color: rgb(0, 255, 255);
+        font-weight: bold;
+        transition: background 0.3s, color 0.3s;
 
+    }
     .hamburger {
         display: flex;
     }
     .hero-section{
-        background-image: url('./assets/wallpaperflare.com_wallpaper\ \(8\).jpg');
+        background-image: url('https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
     }
 }
 
@@ -202,7 +279,34 @@ body::-webkit-scrollbar{
         padding: 10px;
         width: 100%;
     }
-    .hero-section h1{
-        font-size: 1.5rem;
+    .hero-content h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        /* background: linear-gradient(45deg, #3a8cf7 48%, #1aa11a 80%, #c27ebf 50%, #33b048 50%); */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
+    .hero-content p {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+        /* color: rgb(255, 34, 14); */
+        font-size: x-large;
+        font-weight: 400;
+        /* margin: 0 30px; */
+    }
+    .btn-group .btn {
+        margin: 0.5rem;
+        display: inline-block;
+        padding: 10px 20px;
+        /* margin: 0 10px; */
+        /* border: 2px solid rgb(255, 0, 0);; */
+        font-size: large;
+        border-radius: 25px;
+        text-decoration: none;
+        color: #00f2ff;
+        font-weight: bold;
+        transition: background 0.3s, color 0.3s;
+
+    }
+    
 }

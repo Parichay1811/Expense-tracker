@@ -1,216 +1,160 @@
 @import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Chewy&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Exo:ital,wght@0,100..900;1,100..900&family=Great+Vibes&family=Jura:wght@300..700&family=Libre+Caslon+Text:wght@400;700&family=Pinyon+Script&family=Playwrite+VN:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&family=Teko:wght@300..700&display=swap');
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Exo", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Exo", serif;
 }
 
 body {
-  background-image: linear-gradient(to right, #283c86, #45a247);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  font-size: 16px;
+    /* background-image: linear-gradient(400deg, #174BFF, #00D700); */
+    background-image: linear-gradient(45deg, #174BFF 48%, #00D700 80%, #06A463 50%, #00D700 50%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 16px;
 }
+
 html, body {
-  height: 100%;
-  width: 100%;
-  overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
 
 header {
-  width: 100%;
-  padding: 15px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: rgba(74, 74, 74, 0.6);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.83);
-  /* position: fixed; */
+    width: 100%;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.83);
 }
 
 header h2 {
-  font-size: 30px;
-  background-image: linear-gradient(45deg, #E88C4A 48%, #E07A37 60%, #D86825 50%, #CC5613 25%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    font-size: 30px;
+    background-image: linear-gradient(45deg, #ff2828d7 40%, #cb2d2d 55%, #3f65ed 50%, #ffffffa8 25%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 header a {
-  text-decoration: none;
-  background-image: linear-gradient(45deg, #559bf6 48%, #1aa11a 80%, #6a1c66 50%, #33b048 50%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: larger;
-  font-weight: 500;
+    text-decoration: none;
+    background-image: linear-gradient(45deg, #174BFF 48%, #00D700 80%, #06A463 50%, #00D700 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: larger;
+    font-weight: 500;
 }
 
 header a:hover {
-  color: #c3c0c0;
+    color: #c3c0c0;
 }
 
 input::placeholder {
-  color: rgb(6, 4, 4);
-  font-style: unset;
-  font-size: 14px;
-  width: fit-content;
+    color: rgb(6, 4, 4);
+    font-style: unset;
+    font-size: 14px;
+    width: fit-content;
 }
 
 h1 {
-  text-align: center;
-  font-size: 90px;
-  background-image: linear-gradient(45deg, #62e84a 48%, #379ae0 60%, #278eee 50%, #278eee 25%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-size: 90px;
+    background-image: linear-gradient(45deg, #ff2828d7 40%, #cb2d2d 55%, #3f65ed 50%, #ffffffa8 25%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 1rem;
+    text-transform: uppercase;
 }
 
 .two {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 2rem;
 }
 
 #hh {
-  text-align: center;
-  background: rgba(156, 150, 150, 0.45);
-  box-shadow: 0px 0px 54px 0px rgba(0, 0, 0, 0.75);
-  backdrop-filter: blur(4.5px);
-  -webkit-backdrop-filter: blur(4.5px);
-  border-radius: 10px;
-  padding: 20px;
-  width: 80%;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
+    text-align: center;
+    background-image: url('https://plus.unsplash.com/premium_photo-1681181262575-341badc9c253?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZXhwZW5zZXxlbnwwfHwwfHx8MA%3D%3D');
+    background-size: cover;
+    box-shadow: 0px 0px 54px 0px rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(4.5px);
+    -webkit-backdrop-filter: blur(4.5px);
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
 }
 
 input, .country, select {
-  width: 100%;
-  max-width: 250px;
-  height: 40px;
-  padding: 10px;
-  font-size: 16px;
-  border-radius: 5px;
+    width: 100%;
+    max-width: 250px;
+    height: 40px;
+    padding: 10px;
+    font-size: 16px;
 }
 
 #bb {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+#income-tracker {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  margin: 50px auto; /* Center the section with margin */
+  width: 90%; /* Set width to 90% of the parent */
+  max-width: 100%; /* Limit the maximum width */
+  background: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+  padding: 20px; /* Add padding for inner spacing */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
 }
 
-form #bbs {
-  margin: 10px;
-  padding: 10px 50px;
+.income-summary {
+  margin-top: 20px;
   text-align: center;
   font-size: 18px;
-  background-size: 100% auto;
-  color: rgb(255, 255, 255);
-  box-shadow: 0 0 20px #000000;
-  border-radius: 10px;
-  background-image: linear-gradient(to right, #2d9f30 0%, #5a8ef6 51%, #0077ff 100%);
+  color: #333; /* Darker text color for better readability */
 }
 
-#bbs:hover {
-  background-position: right center;
-}
-
-.container {
-  max-height: 430px;
-  padding: 30px 30px;
-  margin: 40px 0;
-  display: none;
-  text-align: center;
-  overflow: auto;
-  width: 80%;
-}
-
-.container::-webkit-scrollbar {
-  display: none;
-}
-
-.fname, .score, .lname, .country {
-  border: none;
-}
-
-.total-amount {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-  font-size: 20px;
-  font-weight: bold;
-  color: white;
-  background: rgb(43, 132, 126);
-  padding: 10px 20px;
-  border-radius: 8px;
-}
-
-#cc {
+#incomeForm {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 50px;
-  width: 95%;
-  height: 100%;
-  background-color: rgb(228, 209, 243);
-  box-shadow: 0px 0px 54px 0px rgba(0, 0, 0, 0.75);
-  backdrop-filter: blur(16.5px);
-  border-radius: 10px;
-  padding: 20px;
+  width: 100%; /* Full width */
+  /* max-width: 90%; */
 }
 
-#ccs {
-  width: 35%;
-  height: 35%;
-  padding-left: 50px;
+#incomeInput {
+  width: 100%; /* Full width */
+  max-width: 250px; /* Limit the maximum width */
+  height: 40px; /* Set height */
+  padding: 10px; /* Inner padding */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 5px; /* Rounded corners */
+  margin-bottom: 10px; /* Space below the input */
 }
 
-#tt {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 95%;
-  height: 100%;
-  background-image: url(../../assets/wallpaperflare-cropped.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  box-shadow: 0px 0px 54px 0px rgba(0, 0, 0, 0.75);
-  border-radius: 10px;
-  padding: 30px 0;
-}
-
-#ttd {
-  width: 50%;
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-  background: rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 0px 54px 0px rgba(0, 0, 0, 0.75);
-  backdrop-filter: blur(7px);
-  border-radius: 10px;
-  color: rgb(224, 224, 224);
-}
-#income{
-  width: 100%;
-  max-width: 200px;
-}
-
-#taxForm button {
+#incomeForm button {
   background-image: linear-gradient(to right, #2d9f30 0%, #5a8ef6 51%, #0077ff 100%);
   color: white;
   border: none;
@@ -218,340 +162,594 @@ form #bbs {
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
-  margin: 0 10px;
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+#incomeForm button:hover {
+  background-color: darkred; /* Change color on hover */
+}
+
+form #bbs {
+    margin: 10px;
+    padding: 10px 50px;
+    text-align: center;
+    font-size: 18px;
+    background-size: 100% auto;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 0 20px #000000;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, #2d9f30 0%, #5a8ef6 51%, #0077ff 100%);
+}
+
+#bbs:hover {
+    background-position: right center;
+}
+
+.container {
+    max-height: 430px;
+    padding: 30px 30px;
+    margin: 40px 0;
+    display: none;
+    text-align: center;
+    overflow: auto;
+    width: 80%;
+}
+
+.container::-webkit-scrollbar {
+    display: none;
+}
+
+.fname, .score, .lname, .country {
+    border: none;
+}
+
+.total-amount {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background: rgb(43, 132, 126);
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+#income-tracker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    width: 95%;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 54px 0px rgba(0, 0, 0, 0.75);
+}
+
+.income-summary {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+}
+
+#cc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    width: 95%;
+    height: auto; /* Changed to auto for better responsiveness */
+    background-image: url('https://images.unsplash.com/photo-1647365368632-90028b7faa23?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGV4cGVuc2V8ZW58MHx8MHx8fDA%3D');
+    background-size: cover;
+    box-shadow: 0px 0px 54px 0px rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(16.5px);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#ccs {
+    width: 35%;
+    height: 35%;
+    padding-left: 50px;
+}
+
+#tt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    height: 100%;
+    background-image: url('../../assets/tax2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 0px 54px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+    padding: 30px 0;
+}
+
+#ttd {
+    width: 50%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 54px 0px rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(7px);
+    border-radius: 10px;
+    color: rgb(224, 224, 224);
+}
+
+#income {
+    width: 100%;
+    max-width: 200px;
+}
+#income-tracker{
+  background-image: url('../../assets/gg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+#taxForm button {
+    background-image: linear-gradient(to right, #2d9f30 0%, #5a8ef6 51%, #0077ff 100%);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 10px;
 }
 
 #taxForm button:hover {
-  background-color: darkred;
+    background-color: darkred;
+}
+.o{
+  color: rgb(0, 255, 17);
+  font-weight: 600;
+  font-size: larger;
+}
+.n{
+  color: rgb(255, 0, 0);
+  font-weight: 600;
+  font-size: larger;
+}
+.e{
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  font-size: larger;
 }
 
 table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 10px;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
 }
 
 th, td {
-  border: 1px solid #ccc;
-  text-align: left;
-  padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+    padding: 10px;
 }
 
 th {
-  background: rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.1);
 }
 
 tbody tr:nth-child(odd) {
-  background: rgba(0, 145, 255, 0.7);
+    background: rgba(0, 145, 255, 0.7);
 }
 
 tbody tr:nth-child(even) {
-  background: #2d9f30;
+    background: #2d9f30;
 }
 
 #result p {
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 30px;
 }
 
 .player-item {
-  width: 100%;
-  color: rgb(0, 0, 0);
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: start;
-  background: rgba(255, 255, 255, 0.45);
-  backdrop-filter: blur(4.5px);
-  -webkit-backdrop-filter: blur(4.5px);
-  height: auto;
-  padding: 13px 20px;
-  border: 1px solid black;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: start;
+    background: rgba(255, 255, 255, 0.45);
+    backdrop-filter: blur(4.5px);
+    -webkit-backdrop-filter: blur(4.5px);
+    height: auto;
+    padding: 13px 20px;
+    border: 1px solid black;
 }
 
 .hamburger-menu {
-  font-size: 24px;
-  cursor: pointer;
-  display: none;
-  color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+    color: #fff;
 }
 
 nav.menu {
-  display: flex;
-  gap: 20px;
+    display: flex;
+    gap: 20px;
 }
 
 nav.menu a {
-  text-decoration: none;
-  color: white;
-  font-size: 18px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
 }
 
 nav.menu a:hover {
-  color: #c3c0c0;
+    color: #c3c0c0;
 }
 
+.footer {
+    background-color: #1a1a1a;
+    color: #5e5e5e;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.footer-content {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.social-media {
+    margin-top: 0.5rem;
+}
+
+.social-media a {
+    text-decoration: none;
+    font-size: 25px;
+    margin-right: 15px;
+    color: #5e5e5e;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-media a:hover {
+    color: #fff;
+    transform: translateY(-5px);
+}
 
 @media (max-width: 950px) {
-  .hamburger-menu {
-    display: block;
+    .hamburger-menu {
+        display: block;
+    }
+
+    nav.menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        background: rgba(0, 0, 0, 0.8);
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    nav.menu.active {
+        display: flex;
+        z-index: 100;
+    }
+
+    #hh {
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+
+    input, .country {
+        width: 80%;
+    }
+
+    #ttd {
+        width: 80%;
+    }
+
+    .two {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    #bb {
+        width: 100%;
+    }
+
+    #hh {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        flex-wrap: wrap;
+    }
+
+    form #bbs {
+        width: 20%;
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    header h2 {
+        font-size: 24px;
+    }
+
+    input, .country, select {
+        width: 90%;
+        max-width: 80px;
+        height: 40px;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+    }
+
+    #cc {
+        width: 100%;
+        height: 1000px;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    #ccs {
+        width: 100%;
+        height: 600px;
+    }
+
+    #tt {
+        width: 90%;
+    }
+
+    #ttd {
+        width: 100%;
+    }
+    #income-tracker {
+      width: 95%; /* Increase width for smaller screens */
+      padding: 15px; /* Reduce padding */
   }
 
-  nav.menu {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 70px;
-    right: 20px;
-    background: rgba(0, 0, 0, 0.8);
-    padding: 10px;
-    border-radius: 8px;
+  #incomeInput {
+      max-width: 90%; /* Allow input to take more width */
   }
 
-  nav.menu.active {
-    display: flex;
-    z-index: 100;
+  
+
+  .income-summary {
+      font-size: 16px; /* Slightly smaller font size */
   }
 
-  /* #ccs {
-    width: 100%;
-    text-align: center;
-  } */
-
-  #hh {
-    flex-direction: column;
-    gap: 20px;
-    width: 100%;
-  }
-
-  input, .country {
-    width: 80%;
-  }
-
-  #ttd {
-    width: 80%;
-  }
-
-  .two {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .container {
-    width: 100%;
-  }
-
-  #bb {
-    width: 100%;
-  }
-  #hh{
-    width: 90%;
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-    flex-wrap: wrap;
-  }
-
-  form #bbs {
-    width: 20%;
-    padding: 10px 20px;
-    font-size: 16px;
-  }
-
-  header h2 {
-    font-size: 24px;
-  }
-  input, .country, select {
-    width: 90%;
-    max-width: 80px;
-    height: 40px;
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 5px;
-  }
-  #cc{
-    width: 100%;
-    height: 1000px;
-    text-align: center;
-  }
-  h1{
-    font-size: 36px;
-  }
-  #ccs{
-    width: 100%;
-    height: 600px;
-
-  }
-  #tt{
-    width: 90%;
-  }
-  #ttd{
-    width: 100%;
-  }
 }
 
 @media (max-width: 600px) {
-  header {
-    padding: 10px 15px;
-  }
+    header {
+        padding: 10px 15px;
+    }
 
-  header h2 {
-    font-size: 22px;
-  }
+    header h2 {
+        font-size: 22px;
+    }
 
-  h1 {
-    font-size: 60px;
-  }
+    h1 {
+        font-size: 60px;
+    }
 
-  .container {
-    width: 90%;
-  }
+    .container {
+        width: 90%;
+    }
 
-  #ccs {
-    width: 80%;
-  }
+    #ccs {
+        width: 80%;
+    }
 
-  table {
-    font-size: 14px;
-  }
+    table {
+        font-size: 14px;
+    }
 
-  #ttd {
-    width: 90%;
-  }
+    #ttd {
+        width: 90%;
+    }
+    #income-tracker {
+      margin: 30px auto; /* Reduce margin for smaller screens */
+      padding: 10px; /* Further reduce padding */
+    }
+
+    #incomeInput {
+        max-width: 90%; /* Full width on very small screens */
+    }
+
+    #incomeForm button {
+        padding: 8px; /* Adjust button padding */
+        font-size: 14px; /* Smaller font size */
+        width: 90%;
+    }
+    
+
+    .income-summary {
+        font-size: 14px; /* Smaller font size for summary */
+    }
 }
 
 @media screen and (max-width: 1122px) {
-  input, .country, select {
-    width: 100%;
-    max-width: 150px;
-    height: 40px;
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 5px;
-  }
-  #cc{
-    width: 90%;
-    height: max-content;
-    text-align: center;
-  }
-  #ccs{
-    width: 60%;
-    height: 400px;
-  }
-  #tt{
-    width: 90%;
-  }
-  #ttd{
-    width: 100%;
-  }
+    input, .country, select {
+        width: 100%;
+        max-width: 150px;
+        height: 40px;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+    }
+
+    #cc {
+        width: 90%;
+        height: max-content;
+        text-align: center;
+    }
+
+    #ccs {
+        width: 60%;
+        height: 400px;
+    }
+
+    #tt {
+        width: 90%;
+    }
+
+    #ttd {
+        width: 100%;
+    }
 }
+
 @media screen and (max-width: 500px) {
-  #ccs {
-    width: 100%;
-    text-align: center;
-  }
+    #ccs {
+        width: 90%; /* Increased width for better fit */
+        height: auto; /* Changed to auto for better responsiveness */
+        padding-left: 0; /* Removed left padding */
+    }
 
-  #hh {
-    flex-direction: column;
-    gap: 20px;
-    width: 100%;
-  }
+    #hh {
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
 
-  input, .country {
-    width: 80%;
-  }
+    input, .country {
+        width: 80%;
+    }
 
-  #ttd {
-    width: 80%;
-  }
+    #ttd {
+        width: 80%;
+    }
 
-  .two {
-    flex-direction: column;
-    align-items: center;
-  }
+    .two {
+        flex-direction: column;
+        align-items: center;
+    }
 
-  .container {
-    width: 100%;
-  }
+    .container {
+        width: 100%;
+    }
 
-  #bb {
-    width: 100%;
-  }
-  #hh{
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
-    flex-wrap: wrap;
-  }
+    #bb {
+        width: 100%;
+    }
 
-  form #bbs {
-    width: 90%;
-    padding: 10px 20px;
-    font-size: 16px;
-  }
+    #hh {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        flex-wrap: wrap;
+    }
 
-  header h2 {
-    font-size: 20px;
-  }
-  input, .country, select {
-    width: 100%;
-    max-width: 90%;
-    height: 40px;
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 5px;
-  }
-  #cc{
-    width: 90%;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #ffffffbf;
-    /* color: white; */
-  }
-  #expenseChart{
-    width: 100%;
-    height: 600px;
-    /* background-color: #f0f0f0; */
-  }
-  
-  h1{
-    font-size: 36px;
-  }
-  #ccs{
-    width: 100%;
-    height: 600px;
-  }
-  #tt{
-    width: 90%;
-    height: 100%;
-  }
-  #ttd{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 100%;
-    height: 100%;
-  }
-  #taxForm{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+    form #bbs {
+        width: 90%;
+        padding: 10px 20px;
+        font-size: 16px;
+    }
 
-  }
-  #taxForm button{
-    width: 100%;
-  }
-  #income{
-    width: 100%;
-    max-width: 100%;
-  }
+    header h2 {
+        font-size: 20px;
+    }
+
+    input, .country, select {
+        width: 100%;
+        max-width: 90%;
+        height: 40px;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+    }
+
+    #cc {
+        margin-top: 20px; /* Reduced margin for smaller screens */
+        padding: 10px; /* Reduced padding for smaller screens */
+    }
+
+    #expenseChart {
+        width: 100%;
+        height: 600px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    #tt {
+        width: 90%;
+        height: 100%;
+        background-image: url('../../assets/tax.jpg');
+    }
+
+    #ttd {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        height: 100%;
+    }
+
+    #taxForm {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #taxForm button {
+        width: 100%;
+    }
+
+    #income {
+        width: 100%;
+        max-width: 100%;
+    }
 }
 
+@media (max-width: 370px) {
+    #cc {
+        margin-top: 15px; /* Further reduced margin for very small screens */
+        padding: 5px; /* Further reduced padding for very small screens */
+    }
 
+    #ccs {
+        width: 95%; /* Increased width to utilize more space */
+        height: auto; /* Ensured height is auto for better responsiveness */
+        padding-left: 0; /* Removed left padding */
+    }
 
+    h1 {
+        font-size: 1.4em; /* Further adjusted font size for very small screens */
+        text-align: center; /* Centered the heading for better alignment */
+        margin-top: 10px;
+    }
+    #income-tracker {
+      margin: 20px auto; /* Further reduce margin */
+      padding: 5px; /* Minimal padding */
+    }
 
+    #incomeInput {
+        height: 35px; /* Smaller input height */
+    }
+
+    #incomeForm button {
+        padding: 6px; /* Smaller button padding */
+        font-size: 12px; /* Smaller font size */
+    }
+
+    .income-summary {
+        font-size: 12px; /* Smaller font size for summary */
+    }
+
+}
