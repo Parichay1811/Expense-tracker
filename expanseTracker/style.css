@@ -92,9 +92,9 @@ body::-webkit-scrollbar{
 }
 
 .hero-content {
-    max-width: 80%;
+    max-width: 90%;
     background-color: #00000057;
-    padding: 30px;
+    padding: 10px 30px;
 }
 
 
@@ -282,14 +282,11 @@ body::-webkit-scrollbar{
     .hero-content h1 {
         font-size: 2rem;
         margin-bottom: 1rem;
-        /* background: linear-gradient(45deg, #3a8cf7 48%, #1aa11a 80%, #c27ebf 50%, #33b048 50%); */
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
     }
     .hero-content p {
         font-size: 1.2rem;
         margin-bottom: 2rem;
-        /* color: rgb(255, 34, 14); */
+        color: #cecece;
         font-size: x-large;
         font-weight: 400;
         /* margin: 0 30px; */
@@ -300,7 +297,7 @@ body::-webkit-scrollbar{
         padding: 10px 20px;
         /* margin: 0 10px; */
         /* border: 2px solid rgb(255, 0, 0);; */
-        font-size: large;
+        font-size: small;
         border-radius: 25px;
         text-decoration: none;
         color: #00f2ff;

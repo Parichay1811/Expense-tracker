@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Chewy&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Exo:ital,wght@0,100..900;1,100..900&family=Great+Vibes&family=Jura:wght@300..700&family=Libre+Caslon+Text:wght@400;700&family=Pinyon+Script&family=Playwrite+VN:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&family=Teko:wght@300..700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +15,7 @@ html, body {
 body {
     display: flex; /* Use flexbox */
     flex-direction: column; /* Stack children vertically */
-    font-family: Arial, sans-serif;
+    font-family: "Exo", serif;
     background: linear-gradient(45deg, #174BFF 30%, #00D700 90%, #00D700 50%, #00D700 50%);
     background-size: cover;
     color: #ffffff;

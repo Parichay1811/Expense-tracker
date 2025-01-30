@@ -133,11 +133,34 @@ incomeForm.addEventListener("submit", function (e) {
         return;
     }
 
+    // Calculate tax based on the income
+    let taxRate = 0;
+    let taxPayable = 0;
+
+    if (income > 1000000) {
+        taxRate = 20;
+        taxPayable = income * 0.20;
+    } else if (income > 700000) {
+        taxRate = 15;
+        taxPayable = income * 0.15;
+    } else if (income > 500000) {
+        taxRate = 10;
+        taxPayable = income * 0.10;
+    } else if (income > 300000) {
+        taxRate = 5;
+        taxPayable = income * 0.05;
+    }
+
+    // Update total income and expenses
     totalIncome += income;
+    totalExpenses += taxPayable; // Add tax to total expenses
     totalIncomeDisplay.innerText = totalIncome.toFixed(2);
+    totalExpensesDisplay.innerText = totalExpenses.toFixed(2);
+
+    // Calculate remaining budget after tax
     updateRemainingBudget();
 
-    incomeInput.value = ""; // Clear the input field
+    incomeInput.value = ""; // Clear theinput field
 });
 
 function updateRemainingBudget() {
