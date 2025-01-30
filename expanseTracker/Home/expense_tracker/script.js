@@ -12,8 +12,9 @@ const incomeInput = document.getElementById("incomeInput");
 const totalIncomeDisplay = document.getElementById("totalIncomeDisplay");
 const totalExpensesDisplay = document.getElementById("totalExpensesDisplay");
 const remainingBudgetDisplay = document.getElementById("remainingBudgetDisplay");
+const taxMessage = document.getElementById("taxMessage");
 
-let playerList = [];
+let playerList = JSON.parse(localStorage.getItem("playerList")) || [];
 let totalIncome = 0;
 let totalExpenses = 0;
 
@@ -39,19 +40,22 @@ const expenseChart = new Chart(ctx, {
             legend: {
                 position: "top",
                 labels: {
-                    color: '#ffffff', // Set the font color for the legend labels
+                    color: '#ffffff',
                 },
             },
         },
         scales: {
             r: {
                 ticks: {
-                    color: '#000000', // Set the font color for the radial axis ticks
+                    color: '#000000',
                 },
             },
         },
     },
 });
+
+// Load existing expenses from local storage
+loadExpenses();
 
 button.addEventListener("click", function (e) {
     e.preventDefault();
@@ -71,8 +75,8 @@ button.addEventListener("click", function (e) {
         };
 
         playerList.push(player);
+        saveExpenses();
         updatedata();
-        updateChart();
 
         fname.value = "";
         lname.value = "";
@@ -80,6 +84,26 @@ button.addEventListener("click", function (e) {
         country.value = "";
     }
 });
+
+function loadExpenses() {
+    playerList.forEach(player => {
+        addPlayerToDOM(player);
+    });
+    updateChart();
+}
+
+function addPlayerToDOM(player) {
+    let div = document.createElement("div");
+    div.classList.add("player-item");
+    div.innerHTML = `
+        <p><strong>Description:</strong> ${player.name}</p>
+        <p><strong>Amount:</strong> ₹${player.score}</p>
+        <p><strong>Category:</strong> ${player.country}</p>
+        <p><strong>Date:</strong> ${player.date}</p>
+        <button class="delete-button" onclick="deletePlayer('${player.name}')">Delete</button>
+    `;
+    container.appendChild(div);
+}
 
 function updatedata() {
     container.innerHTML = "";
@@ -89,15 +113,7 @@ function updatedata() {
     container.style.display = "block";
 
     playerList.forEach((player) => {
-        let div = document.createElement("div");
-        div.classList.add("player-item");
-        div.innerHTML = `
-            <p><strong>Description:</strong> ${player.name}</p>
-            <p><strong>Amount:</strong> ₹${player.score}</p>
-            <p><strong>Category:</strong> ${player.country}</p>
-            <p><strong>Date:</strong> ${player.date}</p>
-        `;
-        container.appendChild(div);
+        addPlayerToDOM(player);
         total += parseFloat(player.score);
     });
 
@@ -105,6 +121,16 @@ function updatedata() {
     totalExpenses = total; // Update total expenses
     totalExpensesDisplay.innerText = totalExpenses.toFixed(2); // Update displayed total expenses
     updateRemainingBudget(); // Update remaining budget
+}
+
+function saveExpenses() {
+    localStorage.setItem("playerList", JSON.stringify(playerList));
+}
+
+function deletePlayer(name) {
+    playerList = playerList.filter(player => player.name !== name);
+    saveExpenses();
+    updatedata();
 }
 
 function updateChart() {
@@ -160,12 +186,20 @@ incomeForm.addEventListener("submit", function (e) {
     // Calculate remaining budget after tax
     updateRemainingBudget();
 
-    incomeInput.value = ""; // Clear theinput field
+    // Show tax message if applicable
+    if (taxPayable > 0) {
+        taxMessage.innerText = `An amount of ₹${taxPayable.toFixed(2)} is deducted as TAX.`;
+        taxMessage.style.display = "block"; // Show the message
+    } else {
+        taxMessage.style.display = "none"; // Hide the message if no tax is deducted
+    }
+
+    incomeInput.value = ""; // Clear the input field
 });
 
 function updateRemainingBudget() {
     const remainingBudget = totalIncome - totalExpenses;
-    remainingBudgetDisplay.innerText = remainingBudget.toFixed(2);
+    remainingBudgetDisplay .innerText = remainingBudget.toFixed(2);
 }
 
 taxForm.addEventListener("submit", function (e) {

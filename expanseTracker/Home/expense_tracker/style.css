@@ -120,37 +120,37 @@ input, .country, select {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 50px auto; /* Center the section with margin */
-    width: 90%; /* Set width to 90% of the parent */
-    max-width: 100%; /* Limit the maximum width */
-    background: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
-    padding: 20px; /* Add padding for inner spacing */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    margin: 50px auto;
+    width: 90%;
+    max-width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
 }
 
 .income-summary {
     margin-top: 20px;
     text-align: center;
     font-size: 18px;
-    color: #333; /* Darker text color for better readability */
+    color: #333;
 }
 
 #incomeForm {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%; /* Full width */
+    width: 100%;
 }
 
 #incomeInput {
-    width: 100%; /* Full width */
-    max-width: 250px; /* Limit the maximum width */
-    height: 40px; /* Set height */
-    padding: 10px; /* Inner padding */
-    border: 1px solid #ccc; /* Light border */
-    border-radius: 5px; /* Rounded corners */
-    margin-bottom: 10px; /* Space below the input */
+    width: 100%;
+    max-width: 250px;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
 }
 
 #incomeForm button {
@@ -161,11 +161,11 @@ input, .country, select {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    transition: background-color 0.3s; /* Smooth transition */
+    transition: background-color 0.3s;
 }
 
 #incomeForm button:hover {
-    background-color: darkred; /* Change color on hover */
+    background-color: darkred;
 }
 
 form #bbs {
@@ -238,7 +238,7 @@ form #bbs {
     align-items: center;
     margin-top: 50px;
     width: 95%;
-    height: auto; /* Changed to auto for better responsiveness */
+    height: auto;
     background-image: url('https://images.unsplash.com/photo-1647365368632-90028b7faa23?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGV4cGVuc2V8ZW58MHx8MHx8fDA%3D');
     background-size: cover;
     box-shadow: 0px 0px 54px 0px rgba(0, 0, 0, 0.75);
@@ -361,6 +361,7 @@ tbody tr:nth-child(even) {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: start;
+    gap: 5px;
     background: rgba(0, 0, 0, 0.428);
     backdrop-filter: blur(4.5px);
     -webkit-backdrop-filter: blur(4.5px);
@@ -420,8 +421,22 @@ nav.menu a:hover {
     color: #fff;
     transform: translateY(-5px);
 }
-button{
+button {
     cursor: pointer;
+}
+#taxMessage{
+    font-size: x-large;
+    font-weight: 600;
+}
+
+.delete-button{
+    background-image: linear-gradient(to right, #2d9f30 0%, #5a8ef6 51%, #0077ff 100%);
+    color: white;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
 }
 
 @media (max-width: 950px) {
@@ -523,16 +538,16 @@ button{
     }
 
     #income-tracker {
-        width: 95%; /* Increase width for smaller screens */
-        padding: 15px; /* Reduce padding */
+        width: 95%;
+        padding: 15px;
     }
 
     #incomeInput {
-        max-width: 90%; /* Allow input to take more width */
+        max-width: 90%;
     }
 
     .income-summary {
-        font-size: 16px; /* Slightly smaller font size */
+        font-size: 16px;
     }
 }
 
@@ -566,22 +581,22 @@ button{
     }
 
     #income-tracker {
-        margin: 30px auto; /* Reduce margin for smaller screens */
-        padding: 10px; /* Further reduce padding */
+        margin: 30px auto;
+        padding: 10px;
     }
 
     #incomeInput {
-        max-width: 90%; /* Full width on very small screens */
+        max-width: 90%;
     }
 
     #incomeForm button {
-        padding: 8px; /* Adjust button padding */
-        font-size: 14px; /* Smaller font size */
+        padding: 8px;
+        font-size: 14px;
         width: 90%;
     }
 
     .income-summary {
-        font-size: 14px; /* Smaller font size for summary */
+        font-size: 14px;
     }
 }
 
@@ -617,9 +632,9 @@ button{
 
 @media screen and (max-width: 500px) {
     #ccs {
-        width: 90%; /* Increased width for better fit */
-        height: auto; /* Changed to auto for better responsiveness */
-        padding-left: 0; /* Removed left padding */
+        width: 90%;
+        height: auto;
+        padding-left: 0;
     }
 
     #hh {
@@ -677,8 +692,8 @@ button{
     }
 
     #cc {
-        margin-top: 20px; /* Reduced margin for smaller screens */
-        padding: 10px; /* Reduced padding for smaller screens */
+        margin-top: 20px;
+        padding: 10px;
     }
 
     #expenseChart {
@@ -723,38 +738,38 @@ button{
 
 @media (max-width: 370px) {
     #cc {
-        margin-top: 15px; /* Further reduced margin for very small screens */
-        padding: 5px; /* Further reduced padding for very small screens */
+        margin-top: 15px;
+        padding: 5px;
     }
 
     #ccs {
-        width: 95%; /* Increased width to utilize more space */
-        height: auto; /* Ensured height is auto for better responsiveness */
-        padding-left: 0; /* Removed left padding */
+        width: 95%;
+        height: auto;
+        padding-left: 0;
     }
 
     h1 {
-        font-size: 1.4em; /* Further adjusted font size for very small screens */
-        text-align: center; /* Centered the heading for better alignment */
+        font-size: 1.4em;
+        text-align: center;
         margin-top: 10px;
     }
 
     #income-tracker {
-        margin: 20px auto; /* Further reduce margin */
-        padding: 5px; /* Minimal padding */
+        margin: 20px auto;
+        padding: 5px;
     }
 
     #incomeInput {
-        height: 35px; /* Smaller input height */
+        height: 35px;
     }
 
     #incomeForm button {
-        padding: 6px; /* Smaller button padding */
-        font-size: 12px; /* Smaller font size */
+        padding: 6px;
+        font-size: 12px;
     }
 
     .income-summary {
-        font-size: 12px; /* Smaller font size for summary */
+        font-size: 12px;
     }
 }
 
